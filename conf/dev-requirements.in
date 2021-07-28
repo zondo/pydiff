@@ -1,0 +1,11 @@
+# Development dependencies.
+
+-c constraints.txt
+
+pytest
+pytest-runner
+tox
+
+# Local Variables:
+# mode: pip-requirements
+# End:

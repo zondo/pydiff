@@ -1,0 +1,10 @@
+# Package dependencies.
+
+-c constraints.txt
+
+xlrd
+openpyxl
+
+# Local Variables:
+# mode: pip-requirements
+# End:

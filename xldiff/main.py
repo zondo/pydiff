@@ -1,7 +1,8 @@
 """
-An extended python diff.
+A 'diff' utility for Excel spreadsheets.
 
-TODO: add metaclass to create the class list for text_source()
+TODO: add __main__.py
+TODO: refactor this into submodules
 """
 
 import difflib
