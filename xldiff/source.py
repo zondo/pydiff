@@ -1,4 +1,6 @@
 """Sources of text to diff.
+
+TODO: consider removing xls support
 """
 
 import xlrd
@@ -43,11 +45,11 @@ class TextSource(object):
 
 class Spreadsheet(object):
     sheetformat = " Sheet: %s "
-    separator = " | "
+    separator = "\t"
     splitnewlines = False
-    numformat = "%g"
+    numformat = "%.12g"
 
-    def sheetname(self, name, width=80, fillchar="="):
+    def sheetname(self, name, width=80, fillchar="-"):
         name = (self.sheetformat % name).center(width, fillchar)
         return "\n" + name + "\n"
 
