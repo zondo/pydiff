@@ -1,8 +1,6 @@
 pyxldiff
 ========
 
-TODO: finish this!
-
 This is a 'diff' program for Excel spreadsheets.  At the moment, there's no
 actual program; you have to run it like this:
 
@@ -11,5 +9,5 @@ actual program; you have to run it like this:
 With one arg, it dumps a text representation of a single spreadsheet.  With
 two, it runs a 'diff' on the text representation of both sheets.
 
-
-
+TODO: finish this!
+TODO: add some unit tests
