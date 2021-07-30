@@ -19,7 +19,7 @@ def main():
         file1, file2 = sys.argv[1:3]
         src1 = text_source(file1)
         src2 = text_source(file2)
-        output = diff_lines(src1, src2, context=True)
+        output = diff_lines(src1, src2)
     else:
         sys.exit(f"Usage: {sys.argv[0]} FILE1 [FILE2]")
 
