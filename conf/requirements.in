@@ -4,6 +4,7 @@
 
 xlrd
 openpyxl
+docopt
 
 # Local Variables:
 # mode: pip-requirements
