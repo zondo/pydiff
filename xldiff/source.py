@@ -9,15 +9,15 @@ import warnings
 
 
 def text_source(path):
-    "Return TextSource object for a path."
+    "Return a TextSource for a path based on its suffix."
 
-    for cls in Excel, Excel2007:
+    for cls in sources:
         if path.endswith(cls.suffixes):
             src = cls(path)
             src.filename = path
             return src
 
-    raise RuntimeError("no reader found for '%s'" % path)
+    raise RuntimeError("no reader found for file '%s' (unknown suffix)" % path)
 
 
 class TextSource(object):
@@ -107,3 +107,7 @@ class Excel2007(TextSource, Spreadsheet):
 
             for cells in sheet.rows:
                 yield from self.cell_lines(cells, totext)
+
+
+# List of sources.
+sources = [Excel, Excel2007]
