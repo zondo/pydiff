@@ -1,0 +1,16 @@
+--- test-original.xlsx
++++ test-modified.xlsx
+@@ -1,7 +1,7 @@
+ 
+------------------------------ Sheet: First sheet ------------------------------
+
+ A	B	C
+-1	2	3
++1	7	3
+ 
+----------------------------- Sheet: Second sheet ------------------------------
+
+ D	E	F	G
+-alpha	beta	gamma	delta
++alpha	epsilon	gamma	delta
+ apple	orange	plum	mango
