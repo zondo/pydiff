@@ -1,0 +1,2 @@
+include LICENSE Makefile MANIFEST MANIFEST.in
+recursive-include tests Makefile *.xls*
